@@ -81,6 +81,13 @@
                 });
             });
         });
+        if ($(window).width() >= '994') {
+
+            $(".sidebar").height($(".slideshow_container").height() + "px");
+        }
+
+
+
 
     });
 })(jQuery);
@@ -108,6 +115,19 @@ document.addEventListener(
                     "border-none"
                 ]
             });
+        };
+
+
+
+
+        function resizeContent() {
+            let q = document.getElementById("slideshow").clientHeight;
+            document.getElementById("sidebar").style.height = q + "px";
+        };
+
+        window.onresize = function() {
+            if (document.documentElement.clientWidth >= 994) { setTimeout(resizeContent, 100); }
+
         }
     }
 )

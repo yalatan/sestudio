@@ -29,10 +29,13 @@ a {
     background-image: url(../image/grey.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    padding-bottom: 50px;
+    /*   padding-bottom: 50px;*/
     z-index: 500;
     max-width: 310px;
     width: 310px;
+    overflow: hidden;
+    /*  box-sizing: border-box;*/
+    /*  transition: height 1s;*/
 }
 
 .logo_borderText {
@@ -80,6 +83,7 @@ a {
 
 .logo_discription {
     margin-bottom: 157px;
+    /* margin-bottom: 4vw;*/
     padding-left: 38px;
     padding-right: 30px;
 }
@@ -90,6 +94,7 @@ a {
 
 .main_menu li {
     height: 61px;
+    /*  height: 3vw;*/
     border-bottom: .5px solid rgba(189, 189, 189, 0.8);
     display: flex;
     align-items: center;
@@ -110,6 +115,7 @@ a {
 
 .main_menu {
     margin-bottom: 100px;
+    /* margin-bottom: 3vw;*/
 }
 
 .main_menu li ul {
@@ -119,6 +125,7 @@ a {
 .second_menu {
     padding-left: 38px;
     margin-bottom: 54px;
+    /*  margin-bottom: 2vw;*/
 }
 
 .second_menu li a,
@@ -487,6 +494,70 @@ button.mfp-close {
     position: absolute;
     bottom: -5px;
     left: 365px;
+}
+
+@media screen and (min-width: 1801px) and (max-width: 1900px) {
+    .logo_discription {
+        margin-bottom: 5vw;
+    }
+}
+
+@media screen and (min-width: 1350px) and (max-width: 1800px) {
+    .logo_discription {
+        margin-bottom: 4vw;
+    }
+    .main_menu li {
+        height: 3vw;
+    }
+    .main_menu {
+        margin-bottom: 2vw;
+    }
+    .second_menu {
+        margin-bottom: 2vw;
+    }
+}
+
+@media screen and (min-width: 994px) and (max-width: 1200px) {
+    .logo_borderText {
+        height: 55px;
+        margin: 20px auto 22px auto;
+    }
+    .logo_name {
+        font-size: 40px;
+    }
+    .logo_text {
+        font-size: 12px;
+        top: 50px;
+    }
+    .second_menu li {
+        margin-bottom: 0px;
+    }
+    .main_menu {
+        margin-bottom: 1.5vw;
+    }
+    .second_menu {
+        margin-bottom: 1.5vw;
+    }
+    .second_menu li a,
+    .second_menu li span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 994px) and (max-width: 1400px) {
+    .logo_discription {
+        display: none;
+        margin-bottom: 0;
+    }
+    .main_menu li {
+        height: 3vw;
+    }
+    .main_menu {
+        margin-bottom: 3vw;
+    }
+    .second_menu {
+        margin-bottom: 2vw;
+    }
 }
 
 @media screen and (min-width: 994px) and (max-width: 1349px) {
